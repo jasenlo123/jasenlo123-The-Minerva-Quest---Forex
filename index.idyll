@@ -1,0 +1,155 @@
+[meta title:"ForexQuestIdyll" description:"Short description of your project" /]
+[section className:"article-body" id: "hero"]
+![quest](static/images/quest.png)
+![buster](static/images/buster.gif)
+
+[/section]
+
+[Header
+  fullWidth:true
+  title:"Foreign Exchange @ Minerva"
+  subtitle:"How does FOREX affect students' tuition fees?"
+  author:"jasen lo m21 @ the Minerva Quest"
+  authorLink:"https://idyll-lang.org"
+  date:`(new Date()).toDateString()`
+   /]
+
+[section className:"article-body"]
+
+Necessitatibus cumque cupiditate harum. Illum voluptas ut debitis explicabo quisquam sunt ut repellendus. Sunt libero ratione porro molestias voluptatem quod. Qui tempora porro harum est ex quae. Animi corrupti fuga. Cumque mollitia nam omnis dignissimos sint ipsa.
+
+
+Necessitatibus cumque cupiditate harum. Illum voluptas ut debitis explicabo quisquam sunt ut repellendus. Sunt libero ratione porro molestias voluptatem quod. Qui tempora porro harum est ex quae. Animi corrupti fuga. Cumque mollitia nam omnis dignissimos sint ipsa.
+ 
+Modi saepe ad non tenetur excepturi. Omnis aut aut et quia minima excepturi ipsam illum harum. Voluptas reiciendis quas. Sit itaque ut. Pariatur eos assumenda facere quis.
+ 
+Sunt quod dolorem ea sunt cum delectus dignissimos quis exercitationem. Provident temporibus dolores. Quis nihil inventore iusto est.Necessitatibus cumque cupiditate harum. 
+
+[Aside]
+  [var name:"currency_list" value:`["Albanian Lek","Algerian Dinar","Argentine Peso","Armenian Dram","Australian Dollar","Azerbaijani Manat","Bangladeshi Taka","Belarusian Ruble","Brazilian Real","British Pound Sterling","Bulgarian Lev","Canadian Dollar","Chinese Yuan","Czech Republic Koruna","Danish Krone","Egyptian Pound","Ethiopian Birr","Euro","Georgian Lari","Ghanaian Cedi","Guatemalan Quetzal","Honduran Lempira","Hong Kong Dollar","Hungarian Forint","Indian Rupee","Indonesian Rupiah","Israeli New Sheqel","Jamaican Dollar","Japanese Yen","Jordanian Dinar","Kazakhstani Tenge","Kenyan Shilling","Kyrgystani Som","Malaysian Ringgit","Mexican Peso","Mongolian Tugrik","Moroccan Dirham","Nepalese Rupee","New Taiwan Dollar","New Zealand Dollar","Nigerian Naira","Norwegian Krone","Pakistani Rupee","Philippine Peso","Polish Zloty","Romanian Leu","Russian Ruble","Saudi Riyal","Singapore Dollar","South African Rand","South Korean Won","Swazi Lilangeni","Swedish Krona","Thai Baht","Trinidad and Tobago Dollar","Tunisian Dinar","Turkish Lira","Ugandan Shilling","Ukrainian Hryvnia","United Arab Emirates Dirham","United States Dollar","Uruguayan Peso","Uzbekistan Som","Vietnamese Dong","Zimbabwean Dollar"]`/]
+
+  [var name:"semester_list" value:`["Fall2017","Spring2017","Fall2018","Spring2019","Fall2019","Spring2020","Fall2020","Spring2021"]`/]
+
+  [var name:"selectMyCur" value:"Azerbaijani Manat" /]
+  [var name:"selectOtherCur" value:"United States Dollar" /]
+  [var name:"selectSem" value:"Spring2021" /]
+
+  [derived name:"myPaid" value:`explore.filter(c => c.Currency === selectMyCur)[0][selectSem.toString()]` /]
+  [derived name:"otherPaid" value:`explore.filter(c => c.Currency === selectOtherCur)[0][selectSem.toString()]` /]
+  [derived name:"diff" value:`myPaid - otherPaid` /]
+  [derived name:"perDiff" value:`diff/myPaid` /]
+
+  [derived name:"tuition" value:`explore.filter(c => c.Currency === "United States Dollar")[0][selectSem.toString()]` /]
+
+  [text className:"dek"]
+  Compare how much you pay for school relative to your schoolmates because of Forex:
+  [/text]  [br /]
+
+
+  To pay for Minerva's tuition costs of $[Display value:`tuition` /]
+  in the [Select value:selectSem options: semester_list  /] semester, 
+  you bought USD with [Select value:selectMyCur options: currency_list  /]. 
+  Compared to a schoolmate who bought USD with [Select value:selectOtherCur options: currency_list /], 
+[br /][br /]
+
+  You paid $[Display value:`myPaid` /]. 
+  They paid $[Display value:`otherPaid` /]. 
+  (In terms of 2017 USD)
+[br /][br /]
+  [text className:"dek"]
+  That's a 
+  [Display value:`diff` format:"$.2f"/] (
+  [Display value: `perDiff` format:".0%"/] )
+  difference!
+  [/text]
+
+[/Aside]
+
+[data name:"explore" source:"explore.csv" /]
+[data name:"explore_json" source:"data.json" /]
+
+
+[br /]
+[text className:"dek"]
+Tution + Housing + Student Services Costs in Different Currencies for Past Semesters (in terms of 2017 USD)
+[/text]
+[Table data:explore defaultPageSize:5 /]
+[text className:"caption"]
+This table is sorted in alphabetical order of currency names, and the values are in United States Dollar in 2017 terms. Click next to see more currencies, and scroll to the right to see data for more semesters.
+[/text]
+
+[br /]
+Necessitatibus cumque cupiditate harum. Illum voluptas ut debitis explicabo quisquam sunt ut repellendus. Sunt libero ratione porro molestias voluptatem quod. Qui tempora porro harum est ex quae. Animi corrupti fuga. Cumque mollitia nam omnis dignissimos sint ipsa.
+
+ 
+adsfasdfModi saepe ad non tenetur excepturi. Omnis aut aut et quia minima excepturi ipsam illum harum. Voluptas reiciendis quas. Sit itaque ut. Pariatur eos assumenda facere quis.
+ 
+Sunt quod dolorem ea sunt cum delectus dignissimos quis exercitationem. Provident temporibus dolores. Quis nihil inventore iusto est.
+
+[text className:"dek"]
+Minerva Costs in USD (2017 Value) by Semester for Currencies from Countries with Minervan Students
+[/text]
+
+Each line represents a currency. **Thicker** lines means more students use that currency. Hover over the lines to find out more. Adjust the axis bounds with the slider or highlight your own currency!
+
+[Aside]
+[div className: "viz_options"]
+
+Y-Axis Upper Bound: $[Display value:Upper  format: "c"/]
+[var name:"Upper" value:30000 /]
+[Range value:Upper min:14000 max:80000 step: 1000/]
+
+Lines too close to see? Adjust the y-axis bounds to examine currencies that are bunched up together.
+
+[br /]
+
+[var name:"selectMyCurTwo" value:"Uzbekistan Som" /]
+**Black line** is the US Dollar. 
+Choose currency to [text style:`{color: 'red'}`]highlight[/text]: [Select value:selectMyCurTwo options: currency_list  /]
+
+If you can't see the currency you selected, it's probably because that currency is pegged to the USD. Currencies that tightly pegged to the dollar share the exact same trajectory.
+[/div]
+[/Aside]
+[/section]
+
+[d3LineChart data:explore_json upper:Upper highlight:selectMyCurTwo/]
+
+[section className:"article-body"]
+
+Necessitatibus cumque cupiditate harum. Illum voluptas ut debitis explicabo quisquam sunt ut repellendus. Sunt libero ratione porro molestias voluptatem quod. Qui tempora porro harum est ex quae. Animi corrupti fuga. Cumque mollitia nam omnis dignissimos sint ipsa.
+
+ 
+Modi saepe ad non tenetur excepturi. Omnis aut aut et quia minima excepturi ipsam illum harum. Voluptas reiciendis quas. Sit itaque ut. Pariatur eos assumenda facere quis.
+ 
+Sunt quod dolorem ea sunt cum delectus dignissimos quis exercitationem. Provident temporibus dolores. Quis nihil inventore iusto est.
+
+
+
+
+
+
+
+
+
+
+
+Necessitatibus cumque cupiditate harum. Illum voluptas ut debitis explicabo quisquam sunt ut repellendus. Sunt libero ratione porro molestias voluptatem quod. Qui tempora porro harum est ex quae. Animi corrupti fuga. Cumque mollitia nam omnis dignissimos sint ipsa.
+ 
+Modi saepe ad non tenetur excepturi. Omnis aut aut et quia minima excepturi ipsam illum harum. Voluptas reiciendis quas. Sit itaque ut. Pariatur eos assumenda facere quis.
+ 
+Sunt quod dolorem ea sunt cum delectus dignissimos quis exercitationem. Provident temporibus dolores. Quis nihil inventore iusto est.
+
+Necessitatibus cumque cupiditate harum. Illum voluptas ut debitis explicabo quisquam sunt ut repellendus. Sunt libero ratione porro molestias voluptatem quod. Qui tempora porro harum est ex quae. Animi corrupti fuga. Cumque mollitia nam omnis dignissimos sint ipsa.
+ 
+Modi saepe ad non tenetur excepturi. Omnis aut aut et quia minima excepturi ipsam illum harum. Voluptas reiciendis quas. Sit itaque ut. Pariatur eos assumenda facere quis.
+ 
+Sunt quod dolorem ea sunt cum delectus dignissimos quis exercitationem. Provident temporibus dolores. Quis nihil inventore iusto est.
+
+[/section]
+[data name:"explore2" source:"explore2.csv" /]
+[d3StackedBarChart data:explore2 /]
+
+
+
+
+
