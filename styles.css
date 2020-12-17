@@ -6,6 +6,7 @@ html {
 img {
   display: block;
   width: 100%;
+  max-width: 120%;
 }
 
 body {
@@ -60,6 +61,13 @@ p, .article-body {
   max-width: 90vw;
 }
 
+.article-body .hed {
+  font-size: 2.7rem;
+  line-height: 3rem;
+  box-shadow: inset 0 -0.8rem 0 orange;
+  width: 100%;
+}
+
 .dek {
   margin: 0;
   display: block;
@@ -82,7 +90,7 @@ a, a:visited {
   cursor: pointer;
   text-decoration: none;
   /*border-bottom: 1px solid #EAE7D6;*/
-  box-shadow: inset 0 -4px 0 #EAE7D6;
+  box-shadow: inset 0 -4px 0 orange;
   transition: box-shadow 0.25s ease-out;
 }
 
@@ -146,6 +154,17 @@ input {
   width: 350px;
   right: calc((2vw + 600px + 150px) / -2);
   margin-right: -140%;
+}
+li {
+  width: 200%;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+.caption {
+  font-style: italic;
+  font-size: 0.9rem;
 }
 
 .viz_options {
