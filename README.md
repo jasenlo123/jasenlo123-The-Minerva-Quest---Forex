@@ -22,3 +22,4 @@ Make sure your post has been built, then deploy the docs folder via any static h
 ## Dependencies
 
 You can install custom dependencies by running `npm install <package-name> --save`. Note that any collaborators will also need download the package locally by running `npm install` after pulling the changes.
+# jasenlo123-The-Minerva-Quest---Forex
