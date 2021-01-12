@@ -16,6 +16,7 @@
   "devDependencies": {
     "gh-pages": "^0.12.0"
   },
+  "homepage": "https://jasenlo123.github.io/jasenlo123-The-Minerva-Quest---Forex/",
   "scripts": {
     "deploy": "gh-pages -d build"
   }
