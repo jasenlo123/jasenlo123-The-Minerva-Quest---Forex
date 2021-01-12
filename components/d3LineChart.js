@@ -5,9 +5,9 @@ const d3 = require('d3');
 const height = 550;
 const width = 1000;
 const margin = ({top: 20, right: 70, bottom: 30, left: 50})
-const sems = ['Fall17', 'Spring18', 'Fall18','Spring19',
-        'Fall19','Spring20', 'Fall20','Spring21']
+const sems = ['2017','2018','2019','2020']
 const parser = d3.utcParse("%B %d, %Y")
+const ymin = 20000
 
 class d3LineChart extends D3Component {
   initialize(node, props) {
@@ -24,7 +24,7 @@ class d3LineChart extends D3Component {
 
     const y = d3.scaleLinear()
       //.domain([0, d3.max(data.series, d => d3.max(d.values))]).nice()
-      .domain([11000, props.upper]).nice()
+      .domain([ymin, props.upper]).nice()
       .range([height - margin.bottom, margin.top])
 
     const x = d3.scaleUtc()
@@ -189,7 +189,7 @@ class d3LineChart extends D3Component {
 
     const y = d3.scaleLinear()
       //.domain([0, d3.max(data.series, d => d3.max(d.values))]).nice()
-      .domain([11000, props.upper]).nice()
+      .domain([ymin, props.upper]).nice()
       .range([height - margin.bottom, margin.top])
 
     const x = d3.scaleUtc()

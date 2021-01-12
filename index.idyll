@@ -30,7 +30,6 @@ A Minerva Quest report on the state of financial aid at Minerva details how Fore
 
 Although members of the Minerva community have most likely anecdotally heard of accounts of students struggling with tuition fees because of changing Forex rates, this Quest report investigates how Forex affects different students quantitatively having gathered the Forex data for all the currencies that are used in countries where at least one Minerva student identifies as their country of origin.  Which students pay more and which students pay less? And by how much? 
 
-
 [div className:'hed']Long-term Currency Devaluation[/div]
 Giovanna Chaves (M’20), told the Quest that because of currency devaluation in Brazil, her home country, her first-year term bill from 2016 would cost almost twice as much Brazilian reals if she had to pay it in 2020. Many students would be financially ruined if their school fees rose so dramatically so quickly, but this is the reality for students from countries that use currencies that have consistently weakened against the USD. 
 
@@ -38,13 +37,13 @@ Giovanna Chaves (M’20), told the Quest that because of currency devaluation in
 
 
 [Aside]
-  [var name:"currency_list" value:`["Albanian Lek","Algerian Dinar","Argentine Peso","Armenian Dram","Australian Dollar","Azerbaijani Manat","Bangladeshi Taka","Belarusian Ruble","Brazilian Real","British Pound Sterling","Bulgarian Lev","Canadian Dollar","Chinese Yuan","Czech Republic Koruna","Danish Krone","Egyptian Pound","Ethiopian Birr","Euro","Georgian Lari","Ghanaian Cedi","Guatemalan Quetzal","Honduran Lempira","Hong Kong Dollar","Hungarian Forint","Indian Rupee","Indonesian Rupiah","Israeli New Sheqel","Jamaican Dollar","Japanese Yen","Jordanian Dinar","Kazakhstani Tenge","Kenyan Shilling","Kyrgystani Som","Malaysian Ringgit","Mexican Peso","Mongolian Tugrik","Moroccan Dirham","Nepalese Rupee","New Taiwan Dollar","New Zealand Dollar","Nigerian Naira","Norwegian Krone","Pakistani Rupee","Philippine Peso","Polish Zloty","Romanian Leu","Russian Ruble","Saudi Riyal","Singapore Dollar","South African Rand","South Korean Won","Swazi Lilangeni","Swedish Krona","Thai Baht","Trinidad and Tobago Dollar","Tunisian Dinar","Turkish Lira","Ugandan Shilling","Ukrainian Hryvnia","United Arab Emirates Dirham","United States Dollar","Uruguayan Peso","Uzbekistan Som","Vietnamese Dong","Zimbabwean Dollar"]`/]
+  [var name:"currency_list" value:`["Albanian Lek","Algerian Dinar","Argentine Peso","Armenian Dram","Australian Dollar","Azerbaijani Manat","Bangladeshi Taka","Belarusian Ruble","Brazilian Real","British Pound Sterling","Bulgarian Lev","Canadian Dollar","Chinese Yuan","Czech Republic Koruna","Danish Krone","Egyptian Pound","Ethiopian Birr","Euro","Georgian Lari","Ghanaian Cedi","Guatemalan Quetzal","Honduran Lempira","Hong Kong Dollar","Hungarian Forint","Indian Rupee","Indonesian Rupiah","Israeli New Sheqel","Jamaican Dollar","Japanese Yen","Jordanian Dinar","Kazakhstani Tenge","Kenyan Shilling","Kyrgystani Som","Malaysian Ringgit","Mexican Peso","Mongolian Tugrik","Moroccan Dirham","Nepalese Rupee","New Taiwan Dollar","New Zealand Dollar","Nigerian Naira","Norwegian Krone","Pakistani Rupee","Philippine Peso","Polish Zloty","Romanian Leu","Russian Ruble","Saudi Riyal","Singapore Dollar","South African Rand","South Korean Won","Swazi Lilangeni","Swedish Krona","Thai Baht","Trinidad and Tobago Dollar","Tunisian Dinar","Turkish Lira","Ugandan Shilling","Ukrainian Hryvnia","United Arab Emirates Dirham","United States Dollar","Uruguayan Peso","Uzbekistan Som","Vietnamese Dong"]`/]
 
-  [var name:"semester_list" value:`["Fall2017","Spring2017","Fall2018","Spring2019","Fall2019","Spring2020","Fall2020","Spring2021"]`/]
+  [var name:"semester_list" value:`["Y2017","Y2018","Y2019","Y2020"]`/]
 
   [var name:"selectMyCur" value:"Brazilian Real" /]
   [var name:"selectOtherCur" value:"United States Dollar" /]
-  [var name:"selectSem" value:"Spring2021" /]
+  [var name:"selectSem" value:"Y2020" /]
 
   [derived name:"myPaid" value:`explore.filter(c => c.Currency === selectMyCur)[0][selectSem.toString()]` /]
   [derived name:"otherPaid" value:`explore.filter(c => c.Currency === selectOtherCur)[0][selectSem.toString()]` /]
@@ -78,7 +77,7 @@ Giovanna Chaves (M’20), told the Quest that because of currency devaluation in
 [/Aside]
 
 [data name:"explore" source:"explore.csv" /]
-[data name:"explore_json" source:"data.json" /]
+[data name:"line_data_json" source:"line_data.json" /]
 
 
 [br /]
@@ -104,8 +103,8 @@ Each line represents a currency. **Thicker** lines means more students use that 
 [div className: "viz_options"]
 
 Y-Axis Upper Bound: $[Display value:Upper  format: "c"/]
-[var name:"Upper" value:30000 /]
-[Range value:Upper min:14000 max:80000 step: 1000/]
+[var name:"Upper" value:40000 /]
+[Range value:Upper min:20000 max:100000 step: 1000/]
 
 Lines too close to see? Adjust the y-axis bounds to examine currencies that are bunched up together.
 
@@ -120,7 +119,7 @@ If you can't see the currency you selected, it's probably because that currency 
 [/Aside]
 [/section]
 
-[d3LineChart data:explore_json upper:Upper highlight:selectMyCurTwo/]
+[d3LineChart data:line_data_json upper:Upper highlight:selectMyCurTwo/]
 
 [section className:"article-body"]
 
