@@ -36,14 +36,6 @@ Giovanna Chaves (M’20), told the Quest that because of currency devaluation in
 
 Giovanna Chaves (M’20), told the Quest that because of currency devaluation in Brazil, her home country, her first-year term bill from 2016 would cost almost twice as much Brazilian reals if she had to pay it in 2020. Many students would be financially ruined if their school fees rose so dramatically so quickly, but this is the reality for students from countries that use currencies that have consistently weakened against the USD. 
 
-How did the Quest convert to 2017 USD for a specific semester term bill and currency? An example with the Brazillian Real and 2020 Fall Semester:
-
-* $12975 (2020 USD) → 2020 USD/BRL Forex Conversion → 
-* R$XXXXX (2020 BRL) → 2020 BRL to BRL 2017 Inflation Conversion →
-* R$XXXXX (2017 BRL) →  2017 BRL/USD Forex Conversion →
-* $20918 (2017 USD) - How much the 2020 Fall term bill costs to a student paying with Brazillian Real in terms of 2017 USD.
-
-The operation above was carried out for every currency that are used in countries where at least one Minerva student identifies as their country of origin, as the table below shows the term bill amount in 2017 USD for these currencies:
 
 [Aside]
   [var name:"currency_list" value:`["Albanian Lek","Algerian Dinar","Argentine Peso","Armenian Dram","Australian Dollar","Azerbaijani Manat","Bangladeshi Taka","Belarusian Ruble","Brazilian Real","British Pound Sterling","Bulgarian Lev","Canadian Dollar","Chinese Yuan","Czech Republic Koruna","Danish Krone","Egyptian Pound","Ethiopian Birr","Euro","Georgian Lari","Ghanaian Cedi","Guatemalan Quetzal","Honduran Lempira","Hong Kong Dollar","Hungarian Forint","Indian Rupee","Indonesian Rupiah","Israeli New Sheqel","Jamaican Dollar","Japanese Yen","Jordanian Dinar","Kazakhstani Tenge","Kenyan Shilling","Kyrgystani Som","Malaysian Ringgit","Mexican Peso","Mongolian Tugrik","Moroccan Dirham","Nepalese Rupee","New Taiwan Dollar","New Zealand Dollar","Nigerian Naira","Norwegian Krone","Pakistani Rupee","Philippine Peso","Polish Zloty","Romanian Leu","Russian Ruble","Saudi Riyal","Singapore Dollar","South African Rand","South Korean Won","Swazi Lilangeni","Swedish Krona","Thai Baht","Trinidad and Tobago Dollar","Tunisian Dinar","Turkish Lira","Ugandan Shilling","Ukrainian Hryvnia","United Arab Emirates Dirham","United States Dollar","Uruguayan Peso","Uzbekistan Som","Vietnamese Dong","Zimbabwean Dollar"]`/]
@@ -140,6 +132,13 @@ under dev.
 [d3StackedBarChart data:explore2 /]
 
 
+[div className:'hed']Methodology[/div]
 
+How did the Quest convert to 2017 USD for a specific semester term bill and currency? An example with the Brazillian Real and 2020 Fall Semester:
 
+* $12975 (2020 USD) → 2020 USD/BRL Forex Conversion → 
+* R$XXXXX (2020 BRL) → 2020 BRL to BRL 2017 Inflation Conversion →
+* R$XXXXX (2017 BRL) →  2017 BRL/USD Forex Conversion →
+* $20918 (2017 USD) - How much the 2020 Fall term bill costs to a student paying with Brazillian Real in terms of 2017 USD.
 
+The operation above was carried out for every currency that are used in countries where at least one Minerva student identifies as their country of origin, as the table below shows the term bill amount in 2017 USD for these currencies:
