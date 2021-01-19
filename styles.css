@@ -49,6 +49,7 @@ p, .article-body {
 .article-header {
   width: 600px;
   margin-left: 10vw;
+  margin-bottom: -50px;
 }
 
 .hed {

@@ -2,12 +2,13 @@ const React = require('react');
 const D3Component = require('idyll-d3-component');
 const d3 = require('d3');
 
-const height = 550;
+const height = 570;
 const width = 1000;
 const margin = ({top: 20, right: 70, bottom: 30, left: 50})
 const sems = ['2017','2018','2019','2020']
 const parser = d3.utcParse("%B %d, %Y")
 const ymin = 20000
+const usdIndex = 59
 
 class d3LineChart extends D3Component {
   initialize(node, props) {
@@ -41,7 +42,7 @@ class d3LineChart extends D3Component {
           .attr("text-anchor", "start")
           .attr("font-weight", "bold")
           .attr("font-size", "15px")
-          .text("USD (2017 Value)"))
+          .text("Estimated Yearly Cost of Minerva Cost in USD (2017 Value)"))
 
     const xAxis = g => g
       .attr("transform", `translate(0,${height - margin.bottom})`)
@@ -126,9 +127,9 @@ class d3LineChart extends D3Component {
           const s = data.series.reduce((a, b) => Math.abs(a.values[i] - ym) < Math.abs(b.values[i] - ym) ? a : b);
           path.attr("stroke", d => d.currency === props.highlight? 'red' : d.currency === s.currency ? null : d.currency === "United States Dollar" ? "black" :  "#ddd").filter(d => d === s).raise();
 
-          dot2.attr("transform", `translate(${x(mappedDates[i])},${y(data.series[59].values[i])})`);
+          dot2.attr("transform", `translate(${x(mappedDates[i])},${y(data.series[usdIndex].values[i])})`);
           dot2.select(".cur").text("United States Dollar");
-          dot2.select(".val").text(sems[i] + ': $' + data.series[59].values[i] + ' USD');
+          dot2.select(".val").text(sems[i] + ': $' + data.series[usdIndex].values[i] + ' USD');
   
           dot.attr("transform", `translate(${x(mappedDates[i])},${y(s.values[i])})`);
           dot.select(".cur").text(s.currency);
@@ -206,7 +207,7 @@ class d3LineChart extends D3Component {
           .attr("text-anchor", "start")
           .attr("font-weight", "bold")
           .attr("font-size", "15px")
-          .text("USD (2017 Value)"))
+          .text("Yearly Cost of Minerva Cost in USD (2017 Value)"))
 
     const xAxis = g => g
       .attr("transform", `translate(0,${height - margin.bottom})`)
@@ -291,9 +292,9 @@ class d3LineChart extends D3Component {
         const s = data.series.reduce((a, b) => Math.abs(a.values[i] - ym) < Math.abs(b.values[i] - ym) ? a : b);
         path.attr("stroke", d => d.currency === props.highlight? 'red' : d.currency === s.currency ? null : d.currency === "United States Dollar" ? "black" :  "#ddd").filter(d => d === s).raise();
 
-        dot2.attr("transform", `translate(${x(mappedDates[i])},${y(data.series[59].values[i])})`);
+        dot2.attr("transform", `translate(${x(mappedDates[i])},${y(data.series[usdIndex].values[i])})`);
         dot2.select(".cur").text("United States Dollar");
-        dot2.select(".val").text(sems[i] + ': $' + data.series[59].values[i] + ' USD');
+        dot2.select(".val").text(sems[i] + ': $' + data.series[usdIndex].values[i] + ' USD');
 
         dot.attr("transform", `translate(${x(mappedDates[i])},${y(s.values[i])})`);
         dot.select(".cur").text(s.currency);

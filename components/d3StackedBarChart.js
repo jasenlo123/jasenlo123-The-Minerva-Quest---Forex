@@ -4,15 +4,16 @@ const d3 = require('d3');
 
 
 const height = window.innerHeight;
-const width = window.innerWidth;
-const margin = ({top: 20, right: 150, bottom: 50, left: 100})
+const width = window.innerWidth*1.1;
+const margin = ({top: 20, right: 150, bottom: 30, left: 100})
+
 
 class d3StackedBarChart extends D3Component {
   initialize(node, props) {
     const data = props.data
 
     var svg = d3.select(node).append('svg');
-    const usd = 101300
+    const usd = 99767
 
     svg
     .attr('viewBox', `0 0 ${width} ${height}`)
@@ -20,7 +21,7 @@ class d3StackedBarChart extends D3Component {
     .style('height', 'auto');
 
 
-    var subgroups = d3.keys(data[0]).slice(1,-1)
+    var subgroups = d3.keys(data[0]).slice(2,6)
 
     var groups = d3.map(data, function(d){return(d.Currency)}).keys()
 
@@ -32,7 +33,7 @@ class d3StackedBarChart extends D3Component {
     
     // Add Y axis
     var y = d3.scaleLinear()
-    .domain([0, 300000])
+    .domain([0, 200000])
     .range([height - margin.bottom, margin.top])
 
     const yAxis = g => g
@@ -44,7 +45,7 @@ class d3StackedBarChart extends D3Component {
         .attr("text-anchor", "start")
         .attr("font-weight", "bold")
         .attr("font-size", "20px")
-        .text("Total Cost of Minerva's Tuition Cost in USD (2017 Value) by Currency"))
+        .text("Total Cost of Minerva Cost in USD (2017 Value)"))
 
     const xAxis = g => g
       .attr("transform", `translate(0,${height - margin.bottom})`)
@@ -136,7 +137,7 @@ class d3StackedBarChart extends D3Component {
       .on("mouseover", mouseover)
       .on("mouseleave", mouseleave)
       .on("mousemove", function(d) {
-        var total = Object.values(d.data).slice(1,-1).reduce(function(a, b){
+        var total = Object.values(d.data).slice(2,6).reduce(function(a, b){
           return a + b;
       }, 0)
         var xPosition = d3.mouse(this)[0] - 15;
@@ -192,25 +193,25 @@ class d3StackedBarChart extends D3Component {
     svg.append("text")
       .attr("x", width - margin.right)
       .attr("y", y(usd-500))
-      .attr("font-size", "10px")
+      .attr("font-size", "13px")
       .text("usd total")
 
     svg.append("text")
       .attr("x", x("USD")+10)
       .attr("y", y(usd+20000))
-      .attr("font-size", "10px")
+      .attr("font-size", "15px")
       .text("Majority of currencies")
       .style("text-anchor", "middle")
     svg.append("text")
       .attr("x", x("USD")+10)
       .attr("y", y(usd+15000))
-      .attr("font-size", "10px")
+      .attr("font-size", "15px")
       .text("have depreciated")
       .style("text-anchor", "middle")
     svg.append("text")
       .attr("x", x("USD")+10)
       .attr("y", y(usd+10000))
-      .attr("font-size", "10px")
+      .attr("font-size", "15px")
       .text("versus the USD")
       .style("text-anchor", "middle")
 
