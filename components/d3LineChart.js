@@ -7,7 +7,7 @@ const width = 1000;
 const margin = ({top: 20, right: 70, bottom: 30, left: 50})
 const sems = ['2017','2018','2019','2020']
 const parser = d3.utcParse("%B %d, %Y")
-const ymin = 20000
+const ymin = 16000
 const usdIndex = 59
 
 class d3LineChart extends D3Component {

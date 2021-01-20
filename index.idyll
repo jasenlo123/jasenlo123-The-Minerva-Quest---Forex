@@ -112,16 +112,17 @@ Giovanna Chaves (M'20), told the Quest that because of currency devaluation in B
 // end table
 
 
-The Quest used historical forex rates to determine how much a student has had to pay for Minerva tuition, housing, and student services costs if they paid entirely using their respective currencies-of-origin. **Data normalised to be in terms of 2017 USD through end-of-year currency conversion and inflation adjustment.** Note that the above data are only approximations because of inflation adjustment and how end-of-year forex rates were used for currency conversion even though tuition is usually due in the June/July (Fall) and November/December (Spring). Complete methodological notes are available here. 
+The Quest used historical forex rates to determine how much a student has had to pay for Minerva tuition, housing, and student services costs if they paid entirely using their respective currencies-of-origin. **Data normalised to be in terms of 2017 USD through end-of-year currency conversion and inflation adjustment.** Note that the above data are only approximations because of inflation adjustment and how end-of-year forex rates were used for currency conversion even though tuition is usually due in the June/July (Fall) and November/December (Spring). 
+**It is likely that some figures are underestimated given how wages in some places do not match the rate of inflation.** Complete methodological notes are available here.
 
-The estimated data supports Chaves' claim that her tuition cost almost doubled between 2017 and 2020, from yearly tuition of $24,450 to a frightening $39,901 (in terms of 2017 USD).  
+The estimated data supports Chaves' claim that her tuition cost almost doubled between 2017 and 2020, from yearly tuition of $24,450 to a frightening $36,891 (2017 USD).  
 
 // Line Chart Viz Begins here
 [hr /]
 [text className:"dek"]
-Estimated Minerva Costs for Currencies from Countries with Minerva Students from 2017 to 2020, expressed in 2017 USD.
+Estimated Minerva Costs for Currencies-of-Origin of Minervans from 2017 to 2020, expressed in 2017 USD.
 [/text]
-Each line represents a currency. **Thicker** means more students use that currency. Adjust the axis bounds with the slider or highlight your own currency!
+Each line represents a currency. **Thicker** means more students use that currency. Hover on a line to compare that currency against the USD or highlight your own currency with the controls on the right!
 
 // viz option aside
 [Aside]
@@ -129,17 +130,19 @@ Each line represents a currency. **Thicker** means more students use that curren
 
   Y-Axis Upper Bound: $[Display value:Upper  format: "c"/]
   [var name:"Upper" value:40000 /]
-  [Range value:Upper min:30000 max:100000 step: 1000/]
+  [Range value:Upper min:30000 max:40000 step: 1000/]
 
   Lines too close to see? Adjust the y-axis bounds to examine currencies that are bunched up together.
 
-  [br /]
 
   [var name:"selectMyCurTwo" value:"Brazilian Real" /]
   **Black line** is the US Dollar. 
   Choose currency to [text style:`{color: 'red'}`]highlight[/text]: [Select value:selectMyCurTwo options: currency_list  /]
+  [br /]
+  [br /]
 
-  Note the increasing trend of the United States Dollar. This menas that tuition + housing + student services fees are becoming more expensive in real terms -  costs are rising at a rate that beats inflation. 
+
+  Sidenote: flat-ish trend of the USD in this chart means that tuition + housing + student services fees have stayed relatively constant in real terms (between $24,500 - $25,000) -  costs are only rising at a rate that matches inflation. 
   [/div]
 [/Aside]
 [/section]
@@ -148,11 +151,11 @@ Each line represents a currency. **Thicker** means more students use that curren
 //main viz
 [d3LineChart data:line_data_json upper:Upper highlight:selectMyCurTwo/]
 [section className:"article-body"]
-The incredible cost increase for students using consistently weakening currencies is troubling, especially for those whose families do not have savings in USD or depend on their income in their home currencies to afford the student's expected family contribution. A hypothetical student paying for the Fall20 and Spring21 semesters at the end of the 2020 calendar year entirely in Argentine peso, Turkish lira or the Brazillian real would have paid upwards of $39,000, while a student paying in USD would have only paid approximately $25,500. 
+The incredible cost increase for students using consistently weakening currencies is troubling, especially for those whose families do not have savings in USD or depend on their income in their home currencies to afford the student's expected family contribution. A hypothetical student paying for the Fall20 and Spring21 semesters at the end of the 2020 calendar year entirely in Argentine peso, Turkish lira or the Brazillian real would have paid upwards of $33,000, while a student paying in USD would have only paid approximately $24,500. 
 
 Fortunately, students who are most severely affected by long-term currency devaluation likely receive financial aid in scholarships and work-study wages, which are paid in USD. Many of these students and their families might have had the foresight to purchase USD long before their currencies' depreciation. However, even if the student paid a substantial portion of their Minerva costs in USD, the remaining amount would still be prohibitively expensive in their currencies-of-origin. 
 
-An additional implication is that if students from countries with weak currencies have taken on student debt, they are more or less obliged to find employment in the United States or another country with a strong currency. It will be much harder to service loans if their wages from a job at home are paid to them in such a weak currency than to service loans using earnings in USD. It is impossible to predict the emergence of and impacts of political and economic events on forex rates, but would a student from Argentina have second thoughts about attending Minerva if they knew their education would cost upwards of $190,000 USD in Argentine pesos and a commitment to working in the United States to pay off student debt?
+An additional implication is that if students from countries with weak currencies have taken on student debt, they are more or less obliged to find employment in the United States or another country with a strong currency. It will be much harder to service loans if their wages from a job at home are paid to them in such a weak currency than to service loans using earnings in USD. It is impossible to predict the emergence of and impacts of political and economic events on forex rates, but would a student from Argentina have second thoughts about attending Minerva if they knew their education would cost approximately $130,000 (2017 USD) in Argentine pesos and a commitment to working in the United States to pay off student debt?
 
 [/section]
 
@@ -163,9 +166,14 @@ An additional implication is that if students from countries with weak currencie
 
 [section className:"article-body"]
 [div className:'hed']Short-term Currency Fluctuations[/div]
+Another 
 
 
 [/section]
+
+[FullWidth]
+  [Flourish visualisation:"5006590" /]
+[/FullWidth]
 
 
 [div className:'hed']Methodology[/div]
@@ -184,6 +192,7 @@ The operation above was carried out for every currency that are used in countrie
   //[Flourish story:"722470" /]
 //[/FullWidth]
 
+
 [FullWidth]
-  [Flourish visualisation:"5006590" /]
+  [Flourish visualisation:"5020693" /]
 [/FullWidth]
