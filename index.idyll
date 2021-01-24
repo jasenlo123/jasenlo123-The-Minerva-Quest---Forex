@@ -1,3 +1,5 @@
+[link rel:"icon" type:"image/x-icon" href:"https://www.minervaquest.com/wp-content/uploads/2017/09/cropped-quest_black_logo-192x192.png"/]
+//   <link rel="icon" type="image/x-icon" href="https://www.minervaquest.com/wp-content/uploads/2017/09/cropped-quest_black_logo-192x192.png"/>
 [meta title:"Forex @ Minerva" description:"Minerva Quest Investigation Into FOREX Rates" /]
 [section className:"article-body" id: "hero"]
 ![quest](static/images/quest.png)
@@ -212,6 +214,7 @@ It is also important to note that students who use the same currency are not nec
 [hr/]
 [br/]
 [div className:'hed']Data + Methodology[/div]
+
 [text className:"dek"]
 [u]Data Sources[/u] [/text]
 This Github [a href:"https://github.com/jasenlo123/jasenlo123-The-Minerva-Quest---Forex/tree/main/data" target:"_blank"]sub-directory[/a] contains all of the data that is used in this article. Raw data sources: 
@@ -240,3 +243,9 @@ How did *the Quest* convert to 2017 USD for a specific calendar year and currenc
 [FullWidth]
   [Flourish visualisation:"5031220" /]
 [/FullWidth]
+
+[text className:"dek"]
+[u]Technologies Used![/u] [/text]
+* [a href:"https://idyll-lang.org/" target:"_blank"]Idyll-lang[/a], a markup language and toolkit for writing interactive articles.
+* [a href:"https://flourish.studio/" target:"_blank"]Flourish[/a], data visualisation and storytelling tool.
+* [a href:"https://reactjs.org/" target:"_blank"]React[/a], open-source, front end, JavaScript library for building user interfaces or UI components. 
