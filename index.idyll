@@ -1,4 +1,4 @@
-[meta title:"ForexQuestIdyll" description:"Short description of your project" /]
+[meta title:"Forex @ Minerva" description:"Minerva Quest Investigation Into FOREX Rates" /]
 [section className:"article-body" id: "hero"]
 ![quest](static/images/quest.png)
 ![buster](static/images/buster.gif)
@@ -17,7 +17,7 @@
 
 [section className:"article-body"]
 
-***tldr: Currency exchange rate fluctuations affects most non-American students at Minerva to varying degrees (≈ 88% of students). Long-term currency devaluation has significantly raised tuition prices for students from countries like Argentina, Turkey, and Brazil. Minerva's financial aid packages do not adjust to short-term currency devaluation, which forces students with home currencies prone to sudden devaluation to shoulder higher family contribution costs. Such currencies have generally undergone long-term currency devaluation.***
+***tldr: Currency exchange rate fluctuations affects most non-American students at Minerva to varying degrees. Long-term currency devaluation has significantly raised tuition prices for students from countries like Argentina, Turkey, and Brazil. Minerva's financial aid packages do not adjust to short-term currency devaluation, which forces students with home currencies prone to sudden devaluation to shoulder higher family contribution costs. Such currencies have generally undergone long-term currency devaluation.***
 [hr /]
 
 According to [a href:"https://gist.github.com/emmastiefel/c891ff0910a253b1343259c5f27510bd" target:"_blank"]data[/a] provided by Teri Cannon, Minerva’s Chief Student Affairs and Operations Officer, and compiled by Emma Stiefel, Minerva Quest Editor-in-Chief, 77 nationalities and 66 currencies are represented in the Minerva students body. **That's a lot of different currencies.** 
