@@ -47,7 +47,7 @@ A *Quest* [a href:"https://www.minervaquest.com/2020/10/10/shipping-financial-ai
 
 [hr /]
 
-Members of the Minerva community have likely heard of anecdots of students struggling with tuition fees because of changing forex rates. This Quest report investigates how changing rates affects different students quantitatively having gathered the forex rates data from 2017 to 2020 for the 65 currencies used in countries where at least one Minerva student identifies as their country of origin [div class:"tooltip"]except Zimbabwe & Venezuela[span class:"tooltiptext"] [b]Zimbabwe[/b] started to use a new [b]Zimbabwe[/b] Dollar in 2019, while the [b]Venezuelan[/b] Fuerte was replaced by the [b]Venezuelan[/b] Bolívar in 2018. Changes in their currency systems disallow comparisons between forex rates from 2017 to 2020[/span][/div].
+Members of the Minerva community have likely heard of anecdots of students struggling with tuition fees because of changing forex rates. This Quest report investigates how changing rates affects different students quantitatively having gathered the forex rates data from 2017 to 2020 for the 65 currencies used in countries where at least one Minerva student identifies as their country of origin [div class:"tooltip"]except Zimbabwe & Venezuela[span class:"tooltiptext"] [b]Zimbabwe[/b] started to use a new [b]Zimbabwe[/b] Dollar in 2019, while the [b]Venezuelan[/b] Fuerte was replaced by the [b]Venezuelan[/b] Bolívar in 2018. Changes in their currency systems disallow comparisons between forex rates from 2017 to 2020.[/span][/div].
 
 
 **Which students pay more and pay less because of their home currency? And by roughly how much or little?**
@@ -57,7 +57,7 @@ Members of the Minerva community have likely heard of anecdots of students strug
 
 [div className:'hed']Long-term Currency Devaluation[/div]
 [br /]
-Giovanna Chaves (M'20), [a href:"https://www.minervaquest.com/2020/10/10/shipping-financial-aid-packages-from-a-us-based-university-to-a-global-student-body/" target:"_blank"] told[/a] *the Quest* that because of currency devaluation in Brazil, her home country, her first-year term bill from 2016 would cost almost twice as many Brazilian Reals if she had to pay it in 2020. Many students would be financially ruined if their school fees rose so dramatically, but this is the reality for those from countries that use currencies that have consistently weakened against the USD. 
+Giovanna Chaves (M'20), [a href:"https://www.minervaquest.com/2020/10/10/shipping-financial-aid-packages-from-a-us-based-university-to-a-global-student-body/" target:"_blank"] told[/a] *the Quest* that because of currency devaluation in Brazil, her home country, her first-year term bill from 2016 would cost almost twice as many Brazilian Reals if she had to pay it in 2020. Many students would be financially ruined if their school fees rose so dramatically, but this is the reality for those with home currencies that have consistently weakened against the USD. 
 
 // Aside for comparing costs
 [Aside]
@@ -120,10 +120,10 @@ Giovanna Chaves (M'20), [a href:"https://www.minervaquest.com/2020/10/10/shippin
 
 *The Quest* 
 used historic forex rates to determine how much a student has had to pay for Minerva tuition, housing, and student services costs if they paid [div class:"tooltip"]entirely[span class:"tooltiptext"] This is a hypothetical situation since [b]fewer than 17% of Minerva's student body recieves no financial aid.[/b] It is more likely that non-fin aid students either come from countries with stable currencies, or have financial assets in different currencies. Still, these figures are used to illustrate how forex changes can potentially affect one's fees.[/span][/div]. 
-Data are [div class:"tooltip"]normalised[span class:"tooltiptext"] Complete methodological notes are at the bottom of this article! [/span][/div] 
+Data are [div class:"tooltip"]normalised[span class:"tooltiptext"] [b]Normalising[/b] the data into a common denomination allows for fair comparisons between different currencies and time periods! Complete methodological notes are at the bottom of this article! [/span][/div] 
 to be in terms of 2017 USD through [div class:"tooltip"]end-of-year currency conversion[span class:"tooltiptext"][b]End-of-year[/b] forex rates are used for [b] currency conversion[/b] because inflation data are only available at the end of the year for all the home countries of Minerva students. [/span][/div] 
 and [div class:"tooltip"]inflation[span class:"tooltiptext"] [b]Inflation[/b] is a general increase in prices and fall in the purchasing value of money. This happens at different rates for different countries' economies, and by extension, their currencies too. We have to adjust for [b]inflation[/b] so that we can compare prices in 2017 to those in 2020. It is likely that some figures are underestimated given how wages do not match the rate of [b]inflation[/b] in some places. [/span][/div] adjustment. 
-Note that the above data are only approximations because of inflation adjustment and how end-of-year forex rates were used for currency conversion even though tuition is usually due in the June/July (Fall) and November/December (Spring). 
+Note that the above data are only rough [div class:"tooltip"]approximations[span class:"tooltiptext"] The data are estimates because of inflation itself is also an approximated metric, while end-of-year forex rates were used for currency conversion even though tuition is usually due in the June/July (Fall) and November/December (Spring).  [/span][/div]. 
 
 
 The estimated data supports Chaves' claim that **her tuition cost almost doubled between 2017 and 2020, from yearly tuition of $24,450 to a frightening $36,891 (2017 USD).** The incredible cost increase for students using consistently weakening currencies is troubling, especially for those whose families do not have savings in USD or depend on their income in their home currencies to afford the student's expected family contribution. A hypothetical student paying for the Fall20 and Spring21 semesters at the end of the 2020 calendar year entirely in Argentine Peso, Turkish Lira, or Brazillian Real would have paid upwards of $33,000, while a student paying in USD would have only paid approximately $24,500. 
@@ -214,16 +214,16 @@ It is also important to note that students who use the same currency are not nec
 [div className:'hed']Data + Methodology[/div]
 [text className:"dek"]
 [u]Data Sources[/u] [/text]
-This sub-directory of the Github repository of this interactive contains all of the data that is used in this article. Raw data sources: 
+This Github [a href:"https://github.com/jasenlo123/jasenlo123-The-Minerva-Quest---Forex/tree/main/data" target:"_blank"]sub-directory[/a] contains all of the data that is used in this article. Raw data sources: 
 
-* Minerva Student Visa Fees Data, provided by Teri Cannon, compiled by Emma Stiefel.
-* Historic Forex Rates Data (2017-2020), provided by OpenExchangeRates, compilation code here.
-* Currency to Nationality Map, created by HarishChaudhari.
-* Inflation Rate, End of Period Consumer Prices, provided by International Monetary Fund. 
+* [a href:"https://gist.github.com/emmastiefel/c891ff0910a253b1343259c5f27510bd" target:"_blank"]Minerva Student Visa Fees Data[/a], provided by Teri Cannon, compiled by Emma Stiefel.
+* Historic Forex Rates Data (2017-2020), provided by [a href:"https://docs.openexchangerates.org/docs/api-introduction" target:"_blank"]OpenExchangeRates[/a], compilation code [a href:"https://github.com/jasenlo123/jasenlo123-The-Minerva-Quest---Forex/blob/main/Notebooks/ForexQuest.ipynb" target:"_blank"]here[/a].
+* [a href:"https://gist.github.com/HarishChaudhari/4680482" target:"_blank"]Currency to Nationality Map[/a], created by HarishChaudhari.
+* Inflation Rate, End of Period Consumer Prices (2017-2020), provided by [a href:"https://www.imf.org/external/datamapper/PCPIEPCH@WEO/WEOWORLD" target:"_blank"]International Monetary Fund[/a]. 
 
 [text className:"dek"]
 [u]Total Minerva Cost Estimation + Converting to 2017 USD[/u][/text]
-How did *the Quest* convert to 2017 USD for a specific calendar year and currency? A working example with the Brazillian Real (BRL) and Y2020 is shown in this Jupyter Notebook and abbreviated here:
+How did *the Quest* convert to 2017 USD for a specific calendar year and currency? A working example with the Brazillian Real (BRL) and Y2020 is shown in this [a href:"https://github.com/jasenlo123/jasenlo123-The-Minerva-Quest---Forex/blob/main/Notebooks/Calculation%20Example.ipynb" target:"_blank"]Jupyter Notebook[/a] and abbreviated here:
 
 * Y2020 cost in 2020 USD →  $24,450
 * $24,450 (2020 USD) → Forex Conversion to 2020 BRL ≈ 
