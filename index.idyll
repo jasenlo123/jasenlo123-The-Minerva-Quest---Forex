@@ -8,21 +8,28 @@
 // Idyll header! 
 [Header
   fullWidth:true
-  title:"77 Nationalities & 66 Currencies ......... Foreign Exchange @ Minerva"
+  title:"77 Nationalities & 66 Currencies ......... Currency Exchange @ Minerva"
   subtitle:"How does FOREX affect students' tuition fees?"
   author:"jasen lo m21 @ the Minerva Quest"
-  authorLink:"https://idyll-lang.org"
+  authorLink:"https://jasenlo123.github.io/portfolio/work.html"
   date:`(new Date()).toDateString()`
    /]
 
 [section className:"article-body"]
 
-***tldr: Foreign exchange (forex) rate fluctuations affect most non-American students at Minerva. Long-term currency devaluation has significantly raised tuition prices for students from countries like Argentina, Turkey, and Brazil. Minerva's financial aid packages do not adjust to short-term currency devaluation, which forces students with volatile home currencies prone to sudden devaluation to shoulder higher family contribution costs. These volatile currencies generally coincide with those that have undergone long-term currency devaluation.***
+***tldr: Currency exchange rate fluctuations affects most non-American students at Minerva to varying degrees (≈ 88% of students). Long-term currency devaluation has significantly raised tuition prices for students from countries like Argentina, Turkey, and Brazil. Minerva's financial aid packages do not adjust to short-term currency devaluation, which forces students with volatile home currencies prone to sudden devaluation to shoulder higher family contribution costs. These volatile currencies generally coincide with those that have undergone long-term currency devaluation.***
 [hr /]
 
-According to data provided by Teri Cannon, Minerva’s Chief Student Affairs and Operations Officer, and compiled by Emma Stiefel, Minerva Quest Editor-in-Chief, 77 nationalities and 66 currencies are represented in the Minerva students body. **That's a lot of different currencies.** 
+According to [a href:"https://gist.github.com/emmastiefel/c891ff0910a253b1343259c5f27510bd" target:"_blank"]data[/a] provided by Teri Cannon, Minerva’s Chief Student Affairs and Operations Officer, and compiled by Emma Stiefel, Minerva Quest Editor-in-Chief, 77 nationalities and 66 currencies are represented in the Minerva students body. **That's a lot of different currencies.** 
 
-Minerva students pay tuition in United States Dollars (USD), but the actual value of tuition changes every second because of changes in foreign exchange rates (forex). Depending on how much people want a particular currency, the value of that currency relative to all other currencies changes accordingly.
+Minerva students pay tuition in United States Dollars (USD), but the actual value of tuition changes every second because of changes in currency exchange rate [div class:"tooltip"] (forex) [span class:"tooltiptext"] [b]forex[/b] stands for foreign exchange, which is used interchangably with currency exchange. [b]forex[/b] is a handy abbreviation that is used in this article. [/span][/div]. Depending on how much people want a particular currency, the value of that currency relative to all other currencies changes accordingly.
+
+//tooltip template
+  //[div class:"tooltip"] gloss term highlight 
+  //[span class:"tooltiptext"] 
+  //[b]gloss term[/b] 
+  //description here 
+  //[/span][/div]
 
 [/section]
 
@@ -32,15 +39,16 @@ Minerva students pay tuition in United States Dollars (USD), but the actual valu
 
 [section className:"article-body"]
 
-A Quest report on the state of financial aid at Minerva details how forex has negatively affected students' ability to pay for Minerva tuition fees in two ways:
+A *Quest* [a href:"https://www.minervaquest.com/2020/10/10/shipping-financial-aid-packages-from-a-us-based-university-to-a-global-student-body/" target:"_blank"] report[/a] on the state of financial aid at Minerva details how changeing currency rates have negatively affected students' ability to pay for Minerva tuition fees in two ways:
 
-* **Long-term currency devaluation** - A currency that continuously weakens against the USD effectively raises tuition costs for students who purchase USD from their home currency to pay tuition fees. This type of devaluation hits students whose families have saved their home currency to pay Minerva tuition particularly hard as the value of their savings depreciates proportional to the weakening of their currency. 
+* **Long-term currency devaluation** - A currency that continuously [div class:"tooltip"]weakens[span class:"tooltiptext"][b]Weakening[/b] of a currency, or [b]devaluation/depreciation[/b], means that the value of that currency decreases relative to other currencies. For instance, if one can buy $1 USD with $1 Minerva Dollars yesterday, but only $0.90 USD with $1 Minerva Dollar today, the Minerva Dollar has depreciated against the USD by 10% [/span][/div] against the USD effectively raises tuition costs for students who purchase USD from their home currency to pay tuition fees. This type of devaluation hits students whose families have saved their home currency to pay Minerva tuition particularly hard as the value of their savings depreciates proportional to the weakening of their currency. 
 
-* **Short-term currency fluctuations** - Financial aid packages are released in March, whereas term bill payments are due in July and November for the fall and spring semesters respectively. If a currency's value changes in the months between these dates and if a student pays for the term bill in that currency by purchasing USD, their expected family contribution changes proportionally with the change in their currency's value. 
+* **Short-term currency fluctuations** - Financial aid packages are released in March, whereas term bill payments are due in July and November for the fall and spring semesters respectively. If a currency's value changes in the months between these dates and if a student pays for the term bill in that currency by [div class:"tooltip"]purchasing USD[span class:"tooltiptext"] If you and your family don't have USD on hand, paying for the term bill in your home currency means that you're [b]purchasing USD[/b] because Minerva doesn't accept payment in your currency![/span][/div], their expected family contribution changes proportionally with the change in their currency's value. 
 
 [hr /]
 
-Members of the Minerva community have likely heard of anecdots of students struggling with tuition fees because of changing forex rates. This Quest report investigates how forex affects different students quantitatively having gathered the forex data for the 65 currencies used in countries where at least one Minerva student identifies as their country of origin (except Zimbabwe & Venezuela, hyper-inflated data).
+Members of the Minerva community have likely heard of anecdots of students struggling with tuition fees because of changing forex rates. This Quest report investigates how changing rates affects different students quantitatively having gathered the forex rates data from 2017 to 2020 for the 65 currencies used in countries where at least one Minerva student identifies as their country of origin [div class:"tooltip"]except Zimbabwe & Venezuela[span class:"tooltiptext"] [b]Zimbabwe[/b] started to use a new [b]Zimbabwe[/b] Dollar in 2019, while the [b]Venezuelan[/b] Fuerte was replaced by the [b]Venezuelan[/b] Bolívar in 2018. Changes in their currency systems disallow comparisons between forex rates from 2017 to 2020[/span][/div].
+
 
 **Which students pay more and pay less because of their home currency? And by roughly how much or little?**
 [br /]
@@ -49,7 +57,7 @@ Members of the Minerva community have likely heard of anecdots of students strug
 
 [div className:'hed']Long-term Currency Devaluation[/div]
 [br /]
-Giovanna Chaves (M'20), told the Quest that because of currency devaluation in Brazil, her home country, her first-year term bill from 2016 would cost almost twice as many Brazilian Reals if she had to pay it in 2020. Many students would be financially ruined if their school fees rose so dramatically, but this is the reality for those from countries that use currencies that have consistently weakened against the USD. 
+Giovanna Chaves (M'20), [a href:"https://www.minervaquest.com/2020/10/10/shipping-financial-aid-packages-from-a-us-based-university-to-a-global-student-body/" target:"_blank"] told[/a] *the Quest* that because of currency devaluation in Brazil, her home country, her first-year term bill from 2016 would cost almost twice as many Brazilian Reals if she had to pay it in 2020. Many students would be financially ruined if their school fees rose so dramatically, but this is the reality for those from countries that use currencies that have consistently weakened against the USD. 
 
 // Aside for comparing costs
 [Aside]
@@ -108,12 +116,15 @@ Giovanna Chaves (M'20), told the Quest that because of currency devaluation in B
   [br /]
 
 
-
 // end table
 
+*The Quest* 
+used historic forex rates to determine how much a student has had to pay for Minerva tuition, housing, and student services costs if they paid [div class:"tooltip"]entirely[span class:"tooltiptext"] This is a hypothetical situation since [b]fewer than 17% of Minerva's student body recieves no financial aid.[/b] It is more likely that non-fin aid students either come from countries with stable currencies, or have financial assets in different currencies. Still, these figures are used to illustrate how forex changes can potentially affect one's fees.[/span][/div]. 
+Data are [div class:"tooltip"]normalised[span class:"tooltiptext"] Complete methodological notes are at the bottom of this article! [/span][/div] 
+to be in terms of 2017 USD through [div class:"tooltip"]end-of-year currency conversion[span class:"tooltiptext"][b]End-of-year[/b] forex rates are used for [b] currency conversion[/b] because inflation data are only available at the end of the year for all the home countries of Minerva students. [/span][/div] 
+and [div class:"tooltip"]inflation[span class:"tooltiptext"] [b]Inflation[/b] is a general increase in prices and fall in the purchasing value of money. This happens at different rates for different countries' economies, and by extension, their currencies too. We have to adjust for [b]inflation[/b] so that we can compare prices in 2017 to those in 2020. It is likely that some figures are underestimated given how wages do not match the rate of [b]inflation[/b] in some places. [/span][/div] adjustment. 
+Note that the above data are only approximations because of inflation adjustment and how end-of-year forex rates were used for currency conversion even though tuition is usually due in the June/July (Fall) and November/December (Spring). 
 
-The Quest used historical forex rates to determine how much a student has had to pay for Minerva tuition, housing, and student services costs if they paid entirely using their respective home currencies. **Data normalised to be in terms of 2017 USD through end-of-year currency conversion and inflation adjustment.** Note that the above data are only approximations because of inflation adjustment and how end-of-year forex rates were used for currency conversion even though tuition is usually due in the June/July (Fall) and November/December (Spring). 
-It is likely that some figures are underestimated given how wages do not match the rate of inflation in some places. Complete methodological notes are available here.
 
 The estimated data supports Chaves' claim that **her tuition cost almost doubled between 2017 and 2020, from yearly tuition of $24,450 to a frightening $36,891 (2017 USD).** The incredible cost increase for students using consistently weakening currencies is troubling, especially for those whose families do not have savings in USD or depend on their income in their home currencies to afford the student's expected family contribution. A hypothetical student paying for the Fall20 and Spring21 semesters at the end of the 2020 calendar year entirely in Argentine Peso, Turkish Lira, or Brazillian Real would have paid upwards of $33,000, while a student paying in USD would have only paid approximately $24,500. 
 [/section]
@@ -127,7 +138,7 @@ The estimated data supports Chaves' claim that **her tuition cost almost doubled
 [section className:"article-body"]
 Fortunately, students affected by long-term currency devaluation may receive financial aid in scholarships and work-study wages in USD. Additionally, many of these students and their families might have had the foresight to purchase USD long before their currencies' depreciation. However, even if the student paid a substantial portion of their Minerva costs in USD, the remaining amount would still be prohibitively expensive in their home currency. **For students anticipating the continuous depreciation of their home currency, purchasing USD for future term bill payments sooner would likely save fees in the long run.** However, that would require liquid assets that some students might not have readily available.
 
-An additional implication is that **if students from countries with weak currencies have taken on student debt, they are more or less obliged to find employment in the United States** (or another country with a strong currency). It will be much harder to service loans if their wages from a job at home are paid to them in such a weak currency than to service loans using earnings in USD. It is impossible to predict the emergence of and impacts of political and economic events on forex rates, but would a M'21 student from Argentina have second thoughts about attending Minerva if they knew their education would cost approximately $30,000 (2017 USD) more in Argentine pesos  and a commitment to working in the United States?
+An additional implication is that **if students from countries with weak currencies have taken on student debt, they are more or less obliged to find employment in the United States** (or another country with a strong currency). It will be much harder to service loans if their wages from a job at home are paid to them in such a weak currency than to service loans using earnings in USD. It is impossible to predict the emergence of and impacts of political and economic events on forex rates, but would a M'21 student from Argentina have second thoughts about attending Minerva if they knew their education would cost approximately $30,000 (2017 USD) more in Argentine Pesos and an implicit commitment to working in the United States?
 
 [/section]
 
@@ -138,7 +149,7 @@ An additional implication is that **if students from countries with weak currenc
 
 [section className:"article-body"]
 [div className:'hed']Short-term Currency Fluctuations[/div]
-Minerva's current financial aid system does not account for short term currency fluctuations that could put students in a difficult financial position. Financial aid packages are released in March, whereas term bill payments are due in July and November for the fall and spring semesters. The value of some particularly volatile currencies could change drastically in the time between these dates, to the point that the family contribution outlined in a financial aid package might be an entirely different amount of money by the time payments are due. 
+Minerva's current financial aid system does not account for short term currency fluctuations that could put students in a difficult financial position. Financial aid packages are released in March, whereas term bill payments are due in July and November for the fall and spring semesters. The value of some particularly volatile currencies could change drastically in the time between these dates, to the point that the family contribution outlined in a financial aid package might be an entirely different amount of money by the time payments are due. Between March 2020 and November 2020, the Argentine Peso and Turkish Lira depreciated significantly, which led to a price increase of Argentine and Turkish students' fees by 29% and 21% respectively. 
 
 [/section]
 
@@ -147,11 +158,11 @@ Minerva's current financial aid system does not account for short term currency 
 [/FullWidth]
 
 [section className:"article-body"]
-One of the financial aid Day of Action demands was that students receive "an expected family contribution in both USD and the student's home currency" in their financial aid packages. Such a policy would shield students from currency fluctuations - if a student's currency weakened between March and November, they wouldn't have to pay more because they would pay with the forex rate in March instead of the rate in November. In contrast, those with stronger currencies wouldn't get to contribute less. The Minerva senior team's response to this demand acknowledged the risk of currency fluctuation. Still, it concluded that "We cannot assume all of the risk and shield students and parents entirely from currency fluctuations as this would make financial planning and budgeting unduly hard and more expensive." 
+One of the financial aid [a href:"https://www.minervaquest.com/2020/10/10/shipping-financial-aid-packages-from-a-us-based-university-to-a-global-student-body/" target:"_blank"] Day of Action [/a] demands was that students receive "an expected family contribution in both USD and the student's home currency" in their financial aid packages. Such a policy would [div class:"tooltip"]shield [span class:"tooltiptext"] If a student's currency weakened between March and November, they wouldn't have to pay more because they would pay with the forex rate in March instead of the forex rate in November. In contrast, those with stronger currencies wouldn't get to pay less by taking advantage of their relatively stronger currency. [/span][/div] students from currency fluctuations. The Minerva senior team [a href:"https://d1c2gz5q23tkk0.cloudfront.net/assets/uploads/2924499/asset/Minerva_Response_to_Student_Demands_-_April_16_2020_%281%29.pdf?1587058414" target:"_blank"]concluded[/a] that they "cannot assume all of the risk and shield students and parents entirely from currency fluctuations as this would make financial planning and budgeting unduly hard and more expensive." 
 
-Again, it would be advantageous for those with perpetually weakening currencies to try to get USD sooner before their home currency weakens even more. However, for those who anticipate their home currency could appreciate against the USD within half a year, a potential strategy would be to use Minerva's payment plan option to pay term bills in installments to wait out a period of poor forex rates. 
+Some students have resorted to unorthodox strategies to reduce their financial burden. A South African student told *the Quest* that she had used Minerva's payment plan option to pay term bills in installments to wait out a period of poor forex rates, hoping that the South African Rand would appreciating against the USD within half a year. 
 
-For instance, the term bill for the Fall20 semester was due on 15th July 2020. However, a payment plan could divide a student's payment into three installments due on 15th July 2020, 15th September 2020, and 15th November 2020. If a currency appreciates between these dates, then a student might be able to save on their term bill. 
+For instance, the term bill for the Fall20 semester was due on 15th July 2020. The payment plan would divide a student's payment into three installments due on 15th July 2020, 15th September 2020, and 15th November 2020. If a student's home currency appreciates between these dates, then a student might be able to save on their term bill. 
 [/section]
 
 //installment
@@ -160,9 +171,9 @@ For instance, the term bill for the Fall20 semester was due on 15th July 2020. H
 [/FullWidth]
 
 [section className:"article-body"]
-However, a service fee of 4% of the term bill is charged to the student should they choose to use a payment plan. For example, a payment plan on a term bill of $30,000 USD would end up costing the student $31,200 USD, ignoring any changes in currency exchange rates. Additionally, opting for a payment plan runs the additional risk that if one's home currency depreciates even more, each installment becomes more and more expensive in the home currency. Backtesting a payment plan strategy for the Fall 2020 billing period reveals that only this strategy would have resulted in a cheaper bill for students whose home currency is the Mexican Peso (view test here). **The installment strategy is not only a dangerous gamble but one that is highly unlikely to succeed.** 
+However, a [div class:"tooltip"]service fee[span class:"tooltiptext"] For example, a payment plan on a term bill of [b]$30,000 USD[/b] would end up costing the student [b]$31,200 USD[/b], ignoring any changes in currency exchange rates. [/span][/div] of 4% of the term bill is charged to the student should they choose to use a payment plan.  Additionally, opting for a payment plan runs the additional risk that if one's home currency depreciates even more, each installment becomes more and more expensive in the home currency. [div class:"tooltip"]Backtesting[span class:"tooltiptext"] Backtesting results are included in the methodological notes are at the bottom of this article! [/span][/div] a payment plan strategy for the Fall20 billing period reveals that only this strategy would have resulted in a cheaper bill for students whose home currency is the Mexican Peso. **The installment strategy is not only a dangerous gamble but one that is highly unlikely to succeed.** 
 
-Of course, students would prefer a payment plan for a variety of different reasons. If a student's home currency is weak and short of USD when the term bill is due but has a source of income in the United States, it might be worth the 4% fee to service installments with their USD earnings rather than purchase USD using their home currency. However, a significant finding digging into the viability of a payment plan strategy is that **students who earn their school fees in increasingly weak home currencies should generally avoid taking a payment plan.** Delaying payments progressively increases each installment cost for those with weak home currencies.
+Of course, students would prefer a payment plan for a variety of different reasons. If a student's home currency is weak and short of USD when the term bill is due but has a source of income in the United States, it might be worth the 4% fee to service installments with their USD earnings rather than purchase USD using their home currency. A finding that surfaced after digging into the viability of a payment plan strategy is that **students who earn their school fees in increasingly weak home currencies should generally [div class:"tooltip"]avoid[span class:"tooltiptext"] Delaying payments progressively increases each installment cost for those with weak home currencies since their currency will be worth less when the next installment is due, compared to paying the entire term bill at the deadline. [/span][/div] taking a payment plan.** 
 
 [/section]
 
@@ -172,19 +183,15 @@ Of course, students would prefer a payment plan for a variety of different reaso
 * Long term currency devaluation significantly increases Minerva fees for students with consistently weakening home currencies. Students who anticipate further weakening of their home currency should try to purchase USD for term bills payments earlier if possible.
 * Lower-income students who do not hold savings in USD from countries with weak home currencies will most likely have to find a job in the United States to service student debt.
 * Using installment payment plans to wait for short term home currency appreciation against the USD is not viable given the risk of further currency depreciation and a 4% payment plan service fee.
-* Students who anticipate further weakening of their home currency should avoid opting for installment payment plans if they plan to use earnings in their home currency to service installments, but should consider doing so if they earn in USD.
+* Students considering Minerva's payment plan, those who anticipate further weakening of their home currency should avoid opting for installment if they plan to use earnings in their home currency to service installments, but could consider doing so if they earn in USD.
 [hr/]
-These takeaways are likely common knowledge among students who are negatively affected by forex rates. However, the currency volatility data reveals that only a minority of currencies have their value fixed to the USD. Thus, forex rates affect most non-American students at Minerva, although it is clear that students are affected by varying degrees. **A thorough understanding of forex rates is crucial for students to make informed financial decisions regarding their Minerva education.**
+These takeaways are likely common knowledge among students who are negatively affected by forex rates. **A thorough understanding of forex rates is crucial for all students to make informed financial decisions regarding the cost of their Minerva education.**
 
 *When should I purchase USD to pay for the next term bill? Should I try to aim for a summer job at home or in the United States? Should I take on these student loans if I want to work a job at home after graduation?* 
 
 Understanding how forex affects one's financial standing can support students financial aid appeals should they find the family contribution in their financial aid packages impossible to afford. According to Niko Pelka, Minerva's Chief Finance Officer, large currency swings over the past 12 months are one factor that Minerva's financial aid system considers in assessing financial aid applications. Are there some potential targeted interventions that could benefit the most negatively affected students?
 
-
-Finally, it is important to note that as with many problematic issues facing the Minerva student community, changing forex rates affect some students more than others. Students with home currencies that maintain a fixed exchange rate with the USD, such as the United Arab Emirates Dirham, Jordanian Dinar, and the Hong Kong Dollar, are not affected by forex rate fluctuations. On the other hand, the most volatile currencies such as the Argentine Peso, Uzbekistan Som, and the Turkish Lira, are usually the same currencies that depreciate the most against the USD compared to other currencies.
-
-**Widespread acknowledgement and understanding of forex rates and how these rates impacts certain communities of students can help the student body lobby for improvements in the Minerva financial aid system.**
-
+Currency volatility data reveals that only a minority of currencies have their value [div class:"tooltip"]fixed[span class:"tooltiptext"] A [b]fixed[/b] exchange rate is a regime applied by a government or central bank that ties the country's official currency exchange rate to another country's currency. The purpose of a fixed exchange rate system is to keep a currency's value stable. [/span][/div] to the USD. Thus, forex rates affect most non-American students at Minerva, although it is clear that students are affected by varying degrees. As with many problematic issues facing the Minerva student community, the systemic consequencies and dynamics of global inequalities affect some students more than others. 
 [/section]
 
 //volatility
@@ -192,27 +199,43 @@ Finally, it is important to note that as with many problematic issues facing the
   [Flourish story:"731085" /]
 [/FullWidth]
 
-
 [section className:"article-body"]
-[div className:'hed']Methodology[/div]
-How did the Quest convert to 2017 USD for a specific semester term bill and currency? An example with the Brazillian Real and 2020 Fall Semester:
 
-* $12975 (2020 USD) → 2020 USD/BRL Forex Conversion → 
-* R$XXXXX (2020 BRL) → 2020 BRL to BRL 2017 Inflation Conversion →
-* R$XXXXX (2017 BRL) →  2017 BRL/USD Forex Conversion →
-* $20918 (2017 USD) - How much the 2020 Fall term bill costs to a student paying with Brazillian Real in terms of 2017 USD.
+Students with home [div class:"tooltip"]currencies[span class:"tooltiptext"] Examples include the United Arab Emirates Dirham, Jordanian Dinar, and the Hong Kong Dollar. [/span][/div] that maintain a fixed exchange rate with the USD are not affected at all. On the other hand, the most volatile [div class:"tooltip"]currencies[span class:"tooltiptext"] Examples include Argentine Peso, Uzbekistan Som, and the Turkish Lira. [/span][/div] are usually the same currencies that depreciate the most against the USD compared to other currencies. 
 
-The operation above was carried out for every currency that are used in countries where at least one Minerva student identifies as their country of origin, as the table below shows the term bill amount in 2017 USD for these currencies:
+It is also important to note that students who use the same currency are not necessarily affected in the same way, as Minerva students come from a diverse range of socio-economic backgrounds. A limitation of this investigation is that the data is only performed at a currency-level. This currency-level analysis neglects an individual's socio-economic context about these forex shifts, which is imperative for the Minerva community to truly understand how these forex shifts can negatively or positively affect individuals. 
 
+**Widespread acknowledgement and understanding of how forex rates impacts individual students and their communities can help the Minerva students lobby for improvements in the Minerva financial aid system.**
+[br/]
+[br/]
+[br/]
+[hr/]
+[br/]
+[div className:'hed']Data + Methodology[/div]
+[text className:"dek"]
+[u]Data Sources[/u] [/text]
+This sub-directory of the Github repository of this interactive contains all of the data that is used in this article. Raw data sources: 
+
+* Minerva Student Visa Fees Data, provided by Teri Cannon, compiled by Emma Stiefel.
+* Historic Forex Rates Data (2017-2020), provided by OpenExchangeRates, compilation code here.
+* Currency to Nationality Map, created by HarishChaudhari.
+* Inflation Rate, End of Period Consumer Prices, provided by International Monetary Fund. 
+
+[text className:"dek"]
+[u]Total Minerva Cost Estimation + Converting to 2017 USD[/u][/text]
+How did *the Quest* convert to 2017 USD for a specific calendar year and currency? A working example with the Brazillian Real (BRL) and Y2020 is shown in this Jupyter Notebook and abbreviated here:
+
+* Y2020 cost in 2020 USD →  $24,450
+* $24,450 (2020 USD) → Forex Conversion to 2020 BRL ≈ 
+* R$134,773 (2020 BRL) → Inflation Adjustment to 2017 BRL ≈ 
+* R$122,163 (2017 BRL) → Forex Conversion to 2017 USD ≈ 
+* $36,890 (2017 USD) → Y2020 cost in BRL (2017 USD)
+
+
+[text className:"dek"]
+[u]Backtesting the Payment Plan Strategy for Fall20[/u]
+[/text]
 [/section]
-
-
-
-//story volatility
-//[FullWidth]
-  //[Flourish story:"722470" /]
-//[/FullWidth]
-
 //mexican peso worth
 [FullWidth]
   [Flourish visualisation:"5031220" /]
