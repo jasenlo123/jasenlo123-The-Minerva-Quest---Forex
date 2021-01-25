@@ -331,4 +331,16 @@ li {
     display: none;
   }
 
+
+
+
+  @media all and (max-width: 600px) {
+    .tooltip .tooltiptext {
+      width: 50vw;
+      position: fixed;
+      left: 50%;
+      bottom: 20%;
+    }
+  }
+
 }
