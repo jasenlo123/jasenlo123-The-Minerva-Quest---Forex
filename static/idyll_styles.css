@@ -854,10 +854,10 @@ li {
 }
 
 .tooltip .tooltiptext {
-  width: 220px;
+  width: 300px;
   bottom: 120%;
   left: 50%;
-  margin-left: -110px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  margin-left: -150px; /* Use half of the width (120/2 = 60), to center the tooltip */
   opacity: 0;
   font-size: 1.3rem;
   line-height: 1.5rem;
@@ -916,6 +916,7 @@ li {
     position: static;
   }
   .aside {
+    display: none;
     position: static;
     width: 100%;
     right: 0;
@@ -938,7 +939,7 @@ li {
     width: 90vw;
     max-width: 600px;
     margin: 0 auto;
-    padding-bottom: 80vh;
+    padding-bottom: 5vh;
   }
 
   .fixed > div {
