@@ -115,7 +115,7 @@ Giovanna Chaves (M'20), [a href:"https://www.minervaquest.com/2020/10/10/shippin
   [/text]
   [Table data:explore defaultPageSize:5 /]
   [text className:"caption"]
-  This table is sorted in alphabetical order of currency names, and the values are in United States Dollar in 2017 terms. Click next to see more currencies and the column heads to sort. Additional anticipated costs such as insurance in different cities and Manifest for graduating students are excluded such that the data applies to students of every class in these calendar years.
+  This table is sorted in alphabetical order of currency names, and the values are in United States Dollar in 2017 terms. Click next to see more currencies and the column heads to sort.
   [/text]
   [br /]
   [br /]
@@ -124,7 +124,7 @@ Giovanna Chaves (M'20), [a href:"https://www.minervaquest.com/2020/10/10/shippin
 // end table
 
 *The Quest* 
-used historic forex rates to determine how much a student has had to pay for Minerva tuition, housing, and student services costs if they paid [div className:"tooltip"]entirely[span className:"tooltiptext"] This is a hypothetical situation since [b]fewer than 17% of Minerva's student body recieves no financial aid.[/b] It is more likely that non-fin aid students either come from countries with stable currencies, or have financial assets in different currencies. Still, these figures are used to illustrate how forex changes can potentially affect one's fees.[/span][/div]. 
+used historic forex rates to determine how much a student has had to pay for Minerva tuition, housing, and student services [div className:"tooltip"]costs[span className:"tooltiptext"] Additional anticipated [b]costs[/b] such as insurance in different cities and Manifest for graduating students are excluded such that the data applies to students of every class in these calendar years.[/span][/div].  if they paid [div className:"tooltip"]entirely[span className:"tooltiptext"] This is a hypothetical situation since [b]fewer than 17% of Minerva's student body recieves no financial aid.[/b] It is more likely that non-fin aid students either come from countries with stable currencies, or have financial assets in different currencies. Still, these figures are used to illustrate how forex changes can potentially affect one's fees.[/span][/div]. 
 Data are [div className:"tooltip"]normalised[span className:"tooltiptext"] [b]Normalising[/b] the data into a common denomination allows for fair comparisons between different currencies and time periods! Complete methodological notes are at the bottom of this article! [/span][/div] 
 to be in real terms of 2017 USD through [div className:"tooltip"]end-of-year currency conversion[span className:"tooltiptext"][b]End-of-year[/b] forex rates are used for [b] currency conversion[/b] because inflation data are only available at the end of the year for all the home countries of Minerva students. [/span][/div] 
 and [div className:"tooltip"]inflation[span className:"tooltiptext"] [b]Inflation[/b] is a general increase in prices and fall in the purchasing value of money. This happens at different rates for different countries' economies, and by extension, their currencies too. We have to adjust for [b]inflation[/b] so that we can compare prices in 2017 to those in 2020. [/span][/div] adjustment. 

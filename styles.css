@@ -310,7 +310,7 @@ li {
     width: 90vw;
     max-width: 600px;
     margin: 0 auto;
-    padding-bottom: 5vh;
+    padding-bottom: 1vh;
   }
 
   .fixed > div {
