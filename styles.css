@@ -22,6 +22,7 @@ h1,h2,h3,h4,h5,h6{
   font-weight: bold;
 }
 
+
 p, .article-body {
   font-family: 'Noto Sans',sans-serif;
   font-size: 1.15rem;
@@ -47,7 +48,7 @@ p, .article-body {
 }
 
 .article-header {
-  width: 600px;
+  width: 40vw;
   margin-left: 10vw;
   margin-bottom: -50px;
 }
@@ -58,7 +59,7 @@ p, .article-body {
   line-height: 3rem;
   font-weight: 100;
   margin: 20px 0 20px;
-  width: 150%;
+  width: 120%;
   max-width: 90vw;
 }
 
@@ -248,6 +249,7 @@ li {
 @media all and (max-width: 1600px) {
   .article-header {
     margin-left: 5vw;
+    width: 40vw;
   }
   .article-body {
     margin-left: 5vw;
@@ -263,7 +265,7 @@ li {
   /* put your css styles in here */
   .article-header {
     margin-left: 10px;
-    width: 500px;
+    width: 60vw;
   }
   .article-body {
     margin-left: 10px;
