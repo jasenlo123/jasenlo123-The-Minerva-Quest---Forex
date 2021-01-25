@@ -855,10 +855,10 @@ li {
 }
 
 .tooltip .tooltiptext {
-  width: 300px;
+  width: 30vh;
   bottom: 120%;
   left: 50%;
-  margin-left: -150px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  margin-left: -15vh; /* Use half of the width (120/2 = 60), to center the tooltip */
   opacity: 0;
   font-size: 1.3rem;
   line-height: 1.5rem;
