@@ -14,7 +14,7 @@
   subtitle:"How do currency exchange rates affect Minerva students' tuition fees?"
   author:"jasen lo m21 @ the Minerva Quest"
   authorLink:"https://jasenlo123.github.io/portfolio/work.html"
-  date:`(new Date()).toDateString()`
+  date:"1st February, 2021"
    /]
 
 [section className:"article-body"]
