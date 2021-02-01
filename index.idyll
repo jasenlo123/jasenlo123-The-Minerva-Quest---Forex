@@ -165,6 +165,7 @@ How can students at-risk of home currency devaluation cope with these forex rate
 [text className:"dek"]
 [u]Financial Aid Adjustment[/u]
 [/text]
+
 Pelka told the Quest that Minerva's financial aid system attempts to address long-term currency fluctuations when deciding on how much a student’s family is required to pay. Minerva's financial aid analysis takes "large currency swings over the past 12 months" into consideration, along with other factors such as national economic performance and family circumstances. Additionally, financial aid application figures are converted into USD using the forex rate at the time of the application, which means that financial aid package calculations should reflect a student's financial circumstance if forex rates had significantly altered their conditions. 
 
 //Turkey depreciation video
@@ -192,6 +193,7 @@ These dynamics underscore the importance of Minerva's work-study program as a so
 [text className:"dek"]
 [u]Installments via Payment Plans[/u]
 [/text]
+
 According to Pelka, 10-15% of Minerva students opt for payment plans to pay for term bill balances owed to Minerva in installments. Students prefer installments for a variety of different reasons. One such reason is waiting out a period of poor forex rates. 
 
 Buchanan told the Quest that her family had opted for Minerva's payment plan option, hoping that the South African Rand would appreciate against the USD within half a year. For instance, the term bill for the Fall20 semester was due on July 15th, 2020. The payment plan would divide a student's payment into three installments due on 15th July 2020, 15th September 2020, and 15th November 2020. If a student's home currency appreciates between these dates, a student might save on their term bill.
@@ -215,6 +217,7 @@ If a student's home currency is weak and they are short of USD when the term bil
 [text className:"dek"]
 [u]Futures Contracts[/u]
 [/text]
+
 Pelka told the Quest that Minerva cannot protect a student against short-term forex rate fluctuations, stating that currency price movements are risks that affect  not just students but Minerva too. "Everything we did in Europe last year became 15% more expensive compared to when we planned it. Minerva carries risks for in-country operations, while students carry the risk on the tuition side. Minerva does not see how we can absolve students of that risk," he said.  
  
 //Future contract youtube video
@@ -234,6 +237,7 @@ The Quest also spoke to a Minerva professor familiar with futures contracts, who
 [text className:"dek"]
 [u]Nuclear Option - Restructuring Payments[/u]
 [/text]
+
 Pelka notified the Quest that if a student does find themselves in dire financial straits, for whatever reason inclusive of currency devaluation, they should communicate their situation to Minerva because Minerva is ultimately interested in working out a solution.
 
 In this situation, students may work out a personalised payment plan with Minerva, restructuring their payment by rescheduling payment dates or borrowing against their security deposit. According to Pelka, Minerva usually has the flexibility to restructure a payment. Unfortunately, because of [div className:"tooltip"]cash-flow[span className:"tooltiptext"] Minerva just doesn't have enough money to be owed money. Small institution, after all. [/span][/div] concerns, Minerva cannot restructure payments beyond a year or act as a lender of last resort. Furthermore, Pelka emphasised that the solution of restructuring payments is a nuclear option best avoided. While Minerva can restructure a few students' payments, they cannot afford to do so for most students since Minerva is highly dependent on student tuition to operate. 
@@ -290,6 +294,7 @@ These are some of the challenging questions that Minerva's community wrestles wi
 
 [text className:"dek"]
 [u]Data Sources[/u] [/text]
+
 This Github [a href:"https://github.com/jasenlo123/jasenlo123-The-Minerva-Quest---Forex/tree/main/data" target:"_blank"]sub-directory[/a] contains all of the data that is used in this article. Raw data sources: 
 
 * [a href:"https://gist.github.com/emmastiefel/c891ff0910a253b1343259c5f27510bd" target:"_blank"]Minerva Student Visa Fees Data[/a], provided by Teri Cannon, compiled by Minerva Quest Editor-in-Chief, Emma Stiefel.
@@ -299,6 +304,7 @@ This Github [a href:"https://github.com/jasenlo123/jasenlo123-The-Minerva-Quest-
 
 [text className:"dek"]
 [u]Total Minerva Cost Estimation + Converting to 2017 USD[/u][/text]
+
 How did *the Quest* convert to 2017 USD for a specific calendar year and currency? A working example with the Brazillian Real (BRL) and Y2020 is shown in this [a href:"https://github.com/jasenlo123/jasenlo123-The-Minerva-Quest---Forex/blob/main/Notebooks/Calculation%20Example.ipynb" target:"_blank"]Jupyter Notebook[/a] and abbreviated here:
 
 * Y2020 cost in 2020 USD →  $24,450
@@ -311,6 +317,7 @@ How did *the Quest* convert to 2017 USD for a specific calendar year and currenc
 [text className:"dek"]
 [u]Backtesting the Payment Plan Strategy for Fall20[/u]
 [/text]
+
 [/section]
 //mexican peso worth
 [FullWidth]
@@ -319,6 +326,7 @@ How did *the Quest* convert to 2017 USD for a specific calendar year and currenc
 [section className:"article-body"]
 [text className:"dek"]
 [u]Technologies Used![/u] [/text]
+
 * [a href:"https://idyll-lang.org/" target:"_blank"]Idyll-lang[/a], a markup language and toolkit for writing interactive articles.
 * [a href:"https://flourish.studio/" target:"_blank"]Flourish[/a], data visualisation and storytelling tool.
 * [a href:"https://reactjs.org/" target:"_blank"]React[/a], open-source, front end, JavaScript library for building user interfaces or UI components. 
